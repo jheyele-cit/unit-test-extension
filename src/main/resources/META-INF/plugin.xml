@@ -1,0 +1,19 @@
+<idea-plugin>
+  <id>com.flow.unit-test-plugin</id>
+  <vendor email="jheyele@ciandt.com" url="https://ciandt.com/br/pt-br">C&amp;T</vendor>
+  <description><![CDATA[
+      <p>The Flow plugin is a tool developed by CI&T to generate unit tests.</p>
+    ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <group id="Flow" text="Flow" description="Flow" popup="true">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+      <action id="GenerateUnitTestAction" class="com.flow.unittestplugin.actions.GenerateUnitTestAction" text="Generate Unit Test" description="Generate Unit Test"/>
+    </group>
+  </actions>
+
+</idea-plugin>
